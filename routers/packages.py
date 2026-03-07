@@ -1,10 +1,10 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from typing import List
-from ..database import get_db
-from ..models import User, Package, UserRole
-from ..schemas import PackageCreate, PackageResponse, PackageUpdate
-from ..dependencies import get_current_user, role_required
+from database import get_db
+from models import User, Package, UserRole
+from schemas import PackageCreate, PackageResponse, PackageUpdate
+from dependencies import get_current_user, role_required
 
 router = APIRouter(prefix="/packages", tags=["packages"])
 

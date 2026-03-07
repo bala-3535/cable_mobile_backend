@@ -1,8 +1,8 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from .config import settings
-from .logging import logger
+from core.config import settings
+from core.logging import logger
 
 def send_email(subject: str, body: str):
     """

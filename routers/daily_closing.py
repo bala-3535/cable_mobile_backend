@@ -3,10 +3,10 @@ from sqlalchemy.orm import Session
 from sqlalchemy import func
 from typing import List, Optional
 from datetime import datetime, date as date_type
-from ..database import get_db
-from ..models import User, UserRole, Transaction, DailyClosing, ClosingStatus
-from ..schemas import DailyClosingCreate, DailyClosingVerify, DailyClosingResponse
-from ..dependencies import get_current_user, role_required
+from database import get_db
+from models import User, UserRole, Transaction, DailyClosing, ClosingStatus
+from schemas import DailyClosingCreate, DailyClosingVerify, DailyClosingResponse
+from dependencies import get_current_user, role_required
 
 router = APIRouter(prefix="/daily-closing", tags=["daily-closing"])
 

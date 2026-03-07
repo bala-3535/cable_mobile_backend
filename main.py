@@ -1,9 +1,9 @@
 from fastapi import FastAPI
-from .database import engine, Base
-from .routers import users, customers, packages, daily_closing, faults, health
-from .core.config import settings
-from .core.logging import setup_logging
-from .services.keep_alive import start_keep_alive
+from database import engine, Base
+from routers import users, customers, packages, daily_closing, faults, health
+from core.config import settings
+from core.logging import setup_logging
+from services.keep_alive import start_keep_alive
 from contextlib import asynccontextmanager
 
 # Setup structured logging

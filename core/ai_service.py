@@ -3,8 +3,8 @@ import json
 import pandas as pd
 import io
 from typing import List, Dict, Any
-from .config import settings
-from ..schemas import CustomerCreate, ConnectionType, AccountStatus
+from core.config import settings
+from schemas import CustomerCreate, ConnectionType, AccountStatus
 
 def process_file_data(file_content: bytes, filename: str) -> List[Dict[str, Any]]:
     """

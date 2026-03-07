@@ -4,10 +4,10 @@ from sqlalchemy import func
 from typing import List, Optional
 from datetime import datetime
 
-from ..database import get_db
-from ..models import Fault, Customer, User, FaultStatus
-from ..schemas import FaultCreate, FaultUpdate, FaultResponse
-from ..dependencies import get_current_user
+from database import get_db
+from models import Fault, Customer, User, FaultStatus
+from schemas import FaultCreate, FaultUpdate, FaultResponse
+from dependencies import get_current_user
 
 router = APIRouter(prefix="/faults", tags=["faults"])
 

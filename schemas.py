@@ -1,7 +1,7 @@
 from pydantic import BaseModel, ConfigDict
 from datetime import datetime
 from typing import Optional, List
-from .models import UserRole, ConnectionType, AccountStatus, BillingStatus, ClosingStatus, FaultStatus
+from models import UserRole, ConnectionType, AccountStatus, BillingStatus, ClosingStatus, FaultStatus
 
 # User Schemas
 class UserBase(BaseModel):

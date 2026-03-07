@@ -1,9 +1,9 @@
 import asyncio
 import httpx
 import time
-from ..core.config import settings
-from ..core.logging import logger
-from ..core.mailer import notify_server_wake, notify_error
+from core.config import settings
+from core.logging import logger
+from core.mailer import notify_server_wake, notify_error
 
 # Global variable to track the last ping time to prevent excessive self-pings
 _last_ping_time = 0

@@ -4,17 +4,17 @@ from sqlalchemy import func, case
 from typing import List, Optional
 from datetime import datetime, date as date_type
 import io
-from ..database import get_db
-from ..models import User, UserRole, Customer, ConnectionType, AccountStatus, BillingRecord, BillingStatus, Package, Transaction
-from ..schemas import (
+from database import get_db
+from models import User, UserRole, Customer, ConnectionType, AccountStatus, BillingRecord, BillingStatus, Package, Transaction
+from schemas import (
     CustomerCreate, CustomerUpdate, CustomerResponse, CustomerDetailResponse,
     BillingRecordCreate, BillingRecordResponse,
     CustomerPaymentPatch, TransactionResponse, TransactionUpdate
 )
 from pydantic import BaseModel
-from ..dependencies import get_current_user, role_required
-from ..core.ai_service import process_file_data, generate_admin_insight
-from ..schemas import DailyCollectionResponse
+from dependencies import get_current_user, role_required
+from core.ai_service import process_file_data, generate_admin_insight
+from schemas import DailyCollectionResponse
 
 
 router = APIRouter(prefix="/customers", tags=["customers"])
