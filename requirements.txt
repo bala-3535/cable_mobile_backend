@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+sqlalchemy
+pymysql
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+pydantic-settings
+google-generativeai
+pandas
+openpyxl
+psycopg2-binary
+httpx
+gunicorn
+uvicorn

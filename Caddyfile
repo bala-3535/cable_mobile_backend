@@ -1,0 +1,6 @@
+# Caddy configuration file
+# To enable automatic HTTPS, replace ':80' with your actual domain name (e.g. yourdomain.com)
+
+:80 {
+    reverse_proxy localhost:8089
+}
