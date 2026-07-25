@@ -4,7 +4,6 @@ __pycache__/
 *$py.class
 
 # Environment variables / secrets
-.env
 
 # System files
 .DS_Store
